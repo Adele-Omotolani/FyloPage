@@ -1,0 +1,965 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* min-height: 100vh; */
+    width: 100%;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    width: 90%;
+    height: 100px;
+    /* background-color: palevioletred; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.logo{
+    height: 90px;
+    width: 150px;
+    /* background-color: greenyellow; */
+    & img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+.headerLeft{
+    height: 70px;
+    width: 250px;
+    /* background-color: red; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    & .navs{
+        font-size: 17px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont,
+         'Segoe UI', Roboto, Oxygen, Ubuntu,
+         Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         font-weight: 600;
+         cursor: pointer;
+    }
+}
+.flyo-Hero{
+    height: 550px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: green; */
+}
+.leftHero{
+        height:500px;
+        width: 48%;
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        
+        & h1{
+            font-size: 35px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+             'Segoe UI', Roboto, Oxygen, Ubuntu,
+             Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+             font-weight: 700;
+        }
+        & p{
+            font-size: 19px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+             'Segoe UI', Roboto, Oxygen, Ubuntu,
+             Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+             font-weight: 600;
+             /* text-align: left; */
+        }
+    }
+    .heroBtns{
+        height: 55px;
+        width: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: yellow; */
+        & input{
+            height: 50px;
+            width: 340px;
+            border-radius: 5px;
+            border: 1px solid rgb(177, 176, 176);
+            padding: 10px;
+            outline: none;
+        }
+        & input::placeholder{
+            color: rgb(133, 133, 133);
+            font-size:18px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+             'Segoe UI', Roboto, Oxygen, Ubuntu,
+             Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+             /* font-weight: 600; */
+        }
+        & .rightBtn{
+            height: 50px;
+            width: 200px;
+            background-color: blue;
+            border-radius: 5px;
+            color: white;
+            font-size:18px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+             'Segoe UI', Roboto, Oxygen, Ubuntu,
+             Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+             font-weight: 600;
+             border: none;
+             cursor: pointer;
+        }
+    }
+    .rightHero{
+        height:527px;
+        width: 49%;
+        /* background-color: yellow; */
+    
+        & img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+   .secHero{
+    height: 700px;
+    width: 100%;
+    background-color: white;
+   }
+   .secHeroup{
+    height: 100px;
+    width: 100%;
+    background-image: url(../SecLandingPage/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .secHeroDown{
+    height: 600px;
+    width: 100%;
+    background-color: #F8F8FE;
+    display: flex;
+    justify-content: center;
+   }
+   .secDownWrapper{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+   }
+   .secheroLeft{
+    height:550px;
+    width: 48%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    & h1{
+        font-size: 35px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont,
+         'Segoe UI', Roboto, Oxygen, Ubuntu,
+         Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         font-weight: 700;
+    }
+
+    & .fylotext{
+        height: 140px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* background-color: burlywood; */
+        /* align-items: center; */
+        & p{
+            font-size: 17px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+             'Segoe UI', Roboto, Oxygen, Ubuntu,
+             Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+             font-weight: 600;
+           
+             /* text-align: left; */
+        }
+        & .seeText{
+            display: flex;
+            align-items: center;
+            height: 30px;
+            gap: 5px;
+            text-decoration: underline;
+            text-decoration-color: #63e9e0;
+
+            & .textImg{
+                height: 20px;
+                width: 20px;
+                & img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+ 
+   }
+   .fylobox{
+    height: 250px;
+    width: 390px;
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    & p{
+        font-size: 17px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont,
+         'Segoe UI', Roboto, Oxygen, Ubuntu,
+         Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         font-weight: 600;
+         line-height: 30px;
+         
+    }
+   }
+   .pro-text{
+    height: 80px;
+    width: 230px;
+    display: flex;
+    /* background-color: yellowgreen; */
+    align-items: center;
+    justify-content: space-between;
+   }
+   .fyloProfile{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    & img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50px;
+    }
+   }
+   .proftext{
+    & h3{
+        font-size: 19px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont,
+         'Segoe UI', Roboto, Oxygen, Ubuntu,
+         Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         font-weight: 600;
+      
+    }
+    & p{
+        font-size: 16px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont,
+         'Segoe UI', Roboto, Oxygen, Ubuntu,
+         Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         font-weight: 600;
+    }
+   }
+   .secHeroRight{
+    height:550px;
+    width: 48%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    & .secHeroRightWrapper{
+        height: 400px;
+        width: 100%;
+        & img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    
+   }
+  .beforeFooter{
+    height: 350px;
+    width:100%;
+    background-color: #575989; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BFLWrapper{
+    height: 250px;
+    width: 90%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .BFL{
+        height: 200px;
+        width:45%;
+        /* background-color: yellow; */
+        color: white;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & h1{
+            font-size: 35px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+             'Segoe UI', Roboto, Oxygen, Ubuntu,
+             Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+             font-weight: 700;
+        }
+        & p{
+            font-size: 18px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+             'Segoe UI', Roboto, Oxygen, Ubuntu,
+             Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+             font-weight: 600;
+        }
+    }
+    & .BFR{
+        height: 200px;
+        width:41%;
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        /* align-items: center; */
+            & input{
+                height: 55px;
+                width: 100%;
+                border-radius: 5px;
+                border: 2px solid rgb(107, 106, 106);
+                padding: 10px;
+                outline: none;
+            }
+            & input::placeholder{
+                color: rgb(133, 133, 133);
+                font-size:18px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                 'Segoe UI', Roboto, Oxygen, Ubuntu,
+                 Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                 /* font-weight: 600; */
+            }
+            & .BFRrightBtn{
+                height: 55px;
+                width: 220px;
+                background-color: blue;
+                border-radius: 5px;
+                color: white;
+                font-size:18px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                 'Segoe UI', Roboto, Oxygen, Ubuntu,
+                 Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                 font-weight: 600;
+                 border: none;
+                 cursor: pointer;
+            }
+        
+    }
+}
+.lastFooter{
+    height: 350px;
+    width: 100%;
+    background-color: #07043B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lastFooterWrapper{
+    height: 350px;
+    width: 90%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+.footerLogoBox{
+    height: 200px;
+    width: 300px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   gap: 10px;
+    & .footerLogo{
+        height: 50px;
+        width: 140px;
+        & img{
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+        }
+    }
+    & .pText{
+        display: flex;
+        height: 40px;
+        width: 100%;
+        /* background-color: brown; */
+      display: flex;
+      align-items: center;
+      gap:15px;
+        & .pIcon{
+            height:20px;
+            width: 20px;
+            & img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        & p{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+            'Segoe UI', Roboto, Oxygen, Ubuntu,
+            Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+        }
+    }
+}
+
+.FBox{
+    height:120px;
+    width: 200px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & p{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu,
+        Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        
+    }
+}
+.iconfooter{
+    height: 120px;
+    width: 130px;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+
+    & .ficoncircle{
+        height: 35px;
+        width: 35px;
+        border-radius: 35px;
+        border: 1px solid white;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .fIcon{
+            height: 20px;
+            width: 20px;
+    
+            & img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+   
+}
+
+    @media (max-width:650px) {
+        .header{
+            /* width: 100%; */
+            height: 70px;
+            /* background-color: palevioletred; */
+            display: flex;
+            /* align-items: center; */
+            justify-content: space-between;
+        }
+        .logo{
+            height: 60px;
+            width: 90px;
+            /* background-color: greenyellow; */
+            & img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        .headerLeft{
+            height: 60px;
+            width: 160px;
+            /* background-color: red; */
+            display: flex;
+            justify-content:space-between;
+            /* align-items: center; */
+            & .navs {
+            font-size: 14px;
+        }
+        }
+        .flyo-Hero{
+            flex-direction: column-reverse;
+            height: auto;
+            align-items: center;
+            gap: 0px;
+            justify-content: center;
+            /* background: brown; */
+        }
+        .leftHero{
+            height:400px;
+            width: 100%;
+            /* background-color: red; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+           
+            & h1{
+                font-size: 22px;
+                 text-align: center;
+            }
+            & p{
+                font-size: 15px;
+                 font-weight: 600;
+                 text-align: center;
+            }
+        }
+        
+        .heroBtns{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            
+            & input {
+                width: 100%;
+                /* width: 100%; */
+                font-size: 16px;
+                height: 45px;
+            }
+            &  .rightBtn{
+                width: 100%;
+                font-size: 16px;
+                height: 45px;
+            }
+        
+        }
+        .rightHero{
+            height:auto;
+            width: 100%;
+            /* background-color: yellow; */
+        
+            & img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        .secHero{
+           height:auto;
+        }
+        .secHeroDown{
+            height:auto;
+        }
+        .secDownWrapper{
+           flex-direction: column-reverse;
+           justify-content: space-around;
+           height: auto;
+           }
+           .secHeroRight{
+            height:auto;
+            width: 100%;
+            /* background-color: red; */
+           
+            & .secHeroRightWrapper{
+                height:auto;
+                width: 100%;
+              
+            }
+            
+           }
+           .secheroLeft{
+            height: 600px;
+            width: 100%;
+            /* background-color: blue; */
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            & h1{
+                font-size: 18px;
+               
+            }
+        
+            & .fylotext{
+                height: 160px;
+                & p{
+                    font-size: 13px;
+                   
+                   
+                     /* text-align: left; */
+                }
+            }
+            & .seeText{
+                justify-content: center;
+            }
+        
+        
+           }
+           .fylobox{
+            height: 220px;
+            width: 90%;
+            background-color: white;
+            border-radius: 5px;
+            padding-left: 30px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            & h1{
+                width: 100%;
+            }
+
+            & p{
+                font-size: 13px;
+            
+                 line-height: 25px;
+                 
+            }
+           }
+           .pro-text{
+            height: 70px;
+            width: 100%;
+            display: flex;
+            /* background-color: yellowgreen; */
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+           }
+           .fyloProfile{
+            height: 40px;
+            width: 40px;
+            border-radius: 50px;
+            & img{
+                height: 100%;
+                width: 100%;
+                border-radius: 50px;
+            }
+           }
+           .proftext{
+            & h3{
+                font-size: 15px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                 'Segoe UI', Roboto, Oxygen, Ubuntu,
+                 Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                 font-weight: 600;
+              
+            }
+            & p{
+                font-size: 13px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                 'Segoe UI', Roboto, Oxygen, Ubuntu,
+                 Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                 font-weight: 600;
+            }
+           }
+           .beforeFooter{
+            height: 400px;
+            width:100%;
+            background-color: #575989; 
+            display: flex;
+         
+           
+        }
+        .BFLWrapper{
+            height: 300px;
+            width: 90%;
+            /* background-color: #008000; */
+            justify-content: space-between;
+            flex-direction: column;
+            & .BFL{
+                height: 200px;
+                width:100%;
+                flex-direction: column;
+                align-items: center;
+                & h1{
+                    font-size: 25px;
+                }
+                & p{
+                    font-size: 15px;
+                     text-align: center;
+                }
+            }
+            & .BFR{
+                height: 100px;
+                width:100%;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 0px;
+
+                    & input{
+                        height: 45px;
+                        width: 100%;
+
+                    }
+                    & input::placeholder{
+                        font-size:15px;
+                    }
+                    & .BFRrightBtn{
+                        height: 45px;
+                        width: 100%;
+                        color: white;
+                        font-size:15px;
+
+                    }
+                
+            }
+        }
+        .lastFooter{
+            height: 550px;
+            width: 100%;
+            /* background-color: red; */
+           
+        }
+        .lastFooterWrapper{
+            height: 450px;
+            width: 90%;
+           flex-direction: column;
+           gap: 30px;
+           /* background-color: tomato; */
+        }
+        .footerLogoBox{
+            height: 120px;
+            width: 100%;
+            /* background-color: yellow; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           gap: 10px;
+            & .footerLogo{
+                height: 40px;
+                width: 130px;
+                & img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: fill;
+                }
+            }
+            & .pText{
+                display: flex;
+                height: 40px;
+                width: 100%;
+                /* background-color: brown; */
+              display: flex;
+              align-items: center;
+              gap:15px;
+              
+            
+            }
+        }
+        
+        .FBox{
+            height:120px;
+            width: 100%;
+            /* background-color: red; */
+            flex-direction: column;
+           justify-content: center;
+           gap: 10px;
+        }
+        .iconfooter{
+            height: 80px;
+            width: 60%;
+            /* background-color: green; */
+            justify-content: space-evenly;
+            align-items: center;
+         
+        
+          
+           
+        }
+    }
+     
+        @media (min-width: 651px) and (max-width:1024px){
+
+            .flyo-Hero{
+                height: 400px;
+            }
+            .leftHero{
+                height: 400px;
+                width: 50%;
+                /* background-color: yellow; */
+               & h1{
+                font-size: 30px;
+               }
+               & p{
+                font-size: 15px;
+                 font-weight: 600;
+                
+            }
+            }
+            .heroBtns{
+                height: 100px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                
+                & input {
+                    width: 85%;
+                    /* width: 100%; */
+                    font-size: 16px;
+                    height: 45px;
+                }
+                &  .rightBtn{
+                    width: 85%;
+                    font-size: 16px;
+                    height: 45px;
+                }
+            }    
+            .rightHero{
+                height:400px;
+                width: 48%;
+                /* background-color: yellow; */
+            
+                & img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+            .secHero{
+                height:650px;
+             
+             }
+             .secDownWrapper{
+                height: 700px;
+                }
+             .secHeroDown{
+                 height:650px;
+                 
+                 /* background-color: red; */
+             }
+             .secHeroRight{
+                height:500px;
+                width:49%;
+                margin-left: 20px;
+                /* background-color:green; */
+               justify-content: center;
+                & .secHeroRightWrapper{
+                    height: 300px;
+                    width: 100%;
+                  /* background-color: red; */
+                }
+            }
+                .secheroLeft{
+                 height: 500px;
+                 align-items: center;
+                 gap: 20px;
+                 /* background-color: green; */
+                 & h1{
+                     font-size: 25px;
+                    
+                 }
+             
+                 & .fylotext{
+                     & p{
+                         font-size: 13px;
+                        
+                        
+                          /* text-align: left; */
+                     }
+                 }
+             
+                }
+                .fylobox{
+                 height: 220px;
+                 width: 95%;
+                 padding-left: 15px;
+                 & h1{
+                     width: 100%;
+                 }
+     
+                 & p{
+                     font-size: 13px;
+                 
+                      line-height: 25px;
+                      
+                 }
+                }
+                .pro-text{
+                 height: 70px;
+                 width: 100%;
+                 display: flex;
+                 /* background-color: yellowgreen; */
+                 align-items: center;
+                 justify-content: flex-start;
+                 gap: 10px;
+                }
+                .fyloProfile{
+                 height: 40px;
+                 width: 40px;
+                 border-radius: 50px;
+                 & img{
+                     height: 100%;
+                     width: 100%;
+                     border-radius: 50px;
+                 }
+                }
+                .proftext{
+                 & h3{
+                     font-size: 15px;
+                     font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                      'Segoe UI', Roboto, Oxygen, Ubuntu,
+                      Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                      font-weight: 600;
+                   
+                 }
+                 & p{
+                     font-size: 13px;
+                     font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                      'Segoe UI', Roboto, Oxygen, Ubuntu,
+                      Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                      font-weight: 600;
+                 }
+                }
+                .beforeFooter{
+                    height: 250px;
+                    .BFLWrapper{
+                        height: 300px;
+                        width: 90%;
+                        & .BFL{
+                            height: 200px;
+                            flex-direction: column;
+                            & h1{
+                                font-size: 25px;
+                            }
+                            & p{
+                                font-size: 15px;
+                                
+                            }
+                        }
+                        & .BFR{
+                            height: 100px;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            gap: 0px;
+            
+                                & input{
+                                    height: 45px;
+                                    width: 100%;
+            
+                                }
+                                & input::placeholder{
+                                    font-size:15px;
+                                }
+                                & .BFRrightBtn{
+                                    height: 45px;
+                                    width: 70%;
+                                    font-size:15px;
+            
+                                }
+                            
+                        }
+                    }
+                }
+        }
+ 
